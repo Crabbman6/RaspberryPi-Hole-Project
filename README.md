@@ -59,4 +59,9 @@ DHCP settings within Raspberry Pi admin panel
 
 <img width="997" height="597" alt="image" src="https://github.com/user-attachments/assets/0b26005d-f6c6-43b7-ad06-a889790eb975" />
 
+Final check within the network settings that the DNS server is correctly set to the Raspberry Pi with Automatic DHCP enrollment enabled.
+
+<img width="757" height="220" alt="image" src="https://github.com/user-attachments/assets/39424dd8-8f67-455e-9881-7c85750c4e82" />
+
+
 
