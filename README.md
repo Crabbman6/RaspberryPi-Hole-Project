@@ -42,4 +42,10 @@ aGeZi TIF Mini	for threat intelligence
 
 <img width="974" height="436" alt="image" src="https://github.com/user-attachments/assets/a2f9ccc9-4d62-46c0-b878-5f15a6681cd1" />
 
+# Making the Pi work for the entire network
 
+Now that I have tested the PiHole works by setting my DNS server per device, I'm going to make the Pi the DHCP server and also change this within the router settings. 
+
+
+Saves name of network profile and saves into a variable then saves the settings to that profile. Sets the Pi to use a static address instead of requesting one via DHCP, then sets the static IP. Quad9 is used as the DNS resolver, then reactivates the connection to apply changes.
+<img width="1105" height="620" alt="image" src="https://github.com/user-attachments/assets/27588aac-ee08-4635-b8ea-ae6fd46f5ae5" />
