@@ -49,3 +49,14 @@ Now that I have tested the PiHole works by setting my DNS server per device, I'm
 
 Saves name of network profile and saves into a variable then saves the settings to that profile. Sets the Pi to use a static address instead of requesting one via DHCP, then sets the static IP. Quad9 is used as the DNS resolver, then reactivates the connection to apply changes.
 <img width="1105" height="620" alt="image" src="https://github.com/user-attachments/assets/27588aac-ee08-4635-b8ea-ae6fd46f5ae5" />
+
+
+Disabling DHCP server in the router admin panel 
+
+<img width="1586" height="290" alt="image" src="https://github.com/user-attachments/assets/f7981bd8-a9a7-4abc-aa53-988c719ec1c1" />
+
+DHCP settings within Raspberry Pi admin panel
+
+<img width="997" height="597" alt="image" src="https://github.com/user-attachments/assets/0b26005d-f6c6-43b7-ad06-a889790eb975" />
+
+
