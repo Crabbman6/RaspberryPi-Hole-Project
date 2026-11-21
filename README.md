@@ -1,87 +1,42 @@
 # RaspberryPi-Hole-Project
 Raspberry Pi Hole Setup Project
-
-
-First I have installed Raspberry Pi Imager to put Raspberry Pi Os Lite 64 Bit onto my SD Card. This is the operating system the Pi will run on. 
-
-<img width="1004" height="641" alt="image" src="https://github.com/user-attachments/assets/b38a972d-4a89-49f3-b581-01bb64fdcefc" />
-
-<img width="1006" height="639" alt="image" src="https://github.com/user-attachments/assets/5b3f83e1-a474-4de8-89ac-3ad14b217626" />
-
-
-Here I'm connecting to the Pi over SSH now it has been plugged in. The hostname would not resolve so I used the IP address assigned instead. This will be changed to a different static value in the router settings. 
-
+Operating system setup
+First I have installed Raspberry Pi Imager to put Raspberry Pi Os Lite 64 Bit onto my SD Card. This is the operating system the Pi will run on.
+<img width="1004" height="641" alt="image" src="https://github.com/user-attachments/assets/b38a972d-4a89-49f3-b581-01bb64fdcefc" /><img width="1006" height="639" alt="image" src="https://github.com/user-attachments/assets/5b3f83e1-a474-4de8-89ac-3ad14b217626" />SSH and system updates
+Here I'm connecting to the Pi over SSH now it has been plugged in. The hostname would not resolve so I used the IP address assigned instead. This will be changed to a different static value in the router settings.
 <img width="1103" height="604" alt="image" src="https://github.com/user-attachments/assets/0fab453f-8c69-47f7-8cbb-0aad2b453dd3" />
-
-Updating the OS before proceeding. 
-
-<img width="1105" height="620" alt="image" src="https://github.com/user-attachments/assets/bd7a1c3b-85a5-4af8-9349-aa34eb964f35" />
-
-
-<img width="1110" height="611" alt="image" src="https://github.com/user-attachments/assets/b655c97a-5e11-46eb-8bf6-847662b52489" />
-
-Assigning the Pi a reserved private IP address 
-
+Updating the OS before proceeding.
+<img width="1105" height="620" alt="image" src="https://github.com/user-attachments/assets/bd7a1c3b-85a5-4af8-9349-aa34eb964f35" /><img width="1110" height="611" alt="image" src="https://github.com/user-attachments/assets/b655c97a-5e11-46eb-8bf6-847662b52489" />Reserved IP address and DNS
+Assigning the Pi a reserved private IP address
 <img width="2223" height="192" alt="image" src="https://github.com/user-attachments/assets/14ac9996-d199-495d-9dbc-a2f8f849d8e3" />
-
 Using Quad9 DNS Stream Provider as it focuses on privacy and security.
-
-<img width="1078" height="615" alt="image" src="https://github.com/user-attachments/assets/1106608d-e6f4-4103-b6c7-dcef4e8e34dc" />
-
-PiHole software has been installed on the OS. 
-
+<img width="1078" height="615" alt="image" src="https://github.com/user-attachments/assets/1106608d-e6f4-4103-b6c7-dcef4e8e34dc" />Pi-hole installation and dashboard
+PiHole software has been installed on the OS.
 <img width="1103" height="620" alt="image" src="https://github.com/user-attachments/assets/bc3026a8-6df4-49f9-982c-b1e401945259" />
-
 PiHole Admin Dashboard
-
-<img width="1239" height="1014" alt="image" src="https://github.com/user-attachments/assets/25502ef6-3e69-4db6-a4db-dc1334d859a2" />
-
-Blocklists HaGeZi Pro	for adblock and tracking 
-
-aGeZi TIF Mini	for threat intelligence
-
-<img width="974" height="436" alt="image" src="https://github.com/user-attachments/assets/a2f9ccc9-4d62-46c0-b878-5f15a6681cd1" />
-
-# Making the Pi work for the entire network
-
-Now that I have tested the PiHole works by setting my DNS server per device, I'm going to make the Pi the DHCP server and also change this within the router settings. 
-
-
+<img width="1239" height="1014" alt="image" src="https://github.com/user-attachments/assets/25502ef6-3e69-4db6-a4db-dc1334d859a2" />Blocklists
+- HaGeZi Pro for adblock and tracking
+- aGeZi TIF Mini for threat intelligence
+<img width="974" height="436" alt="image" src="https://github.com/user-attachments/assets/a2f9ccc9-4d62-46c0-b878-5f15a6681cd1" />Making the Pi work for the entire network
+Now that I have tested the PiHole works by setting my DNS server per device, I'm going to make the Pi the DHCP server and also change this within the router settings.
+Static IP configuration
 Saves name of network profile and saves into a variable then saves the settings to that profile. Sets the Pi to use a static address instead of requesting one via DHCP, then sets the static IP. Quad9 is used as the DNS resolver, then reactivates the connection to apply changes.
-<img width="1105" height="620" alt="image" src="https://github.com/user-attachments/assets/27588aac-ee08-4635-b8ea-ae6fd46f5ae5" />
-
-
-Disabling DHCP server in the router admin panel 
-
+<img width="1105" height="620" alt="image" src="https://github.com/user-attachments/assets/27588aac-ee08-4635-b8ea-ae6fd46f5ae5" />DHCP switch
+Disabling DHCP server in the router admin panel
 <img width="1586" height="290" alt="image" src="https://github.com/user-attachments/assets/f7981bd8-a9a7-4abc-aa53-988c719ec1c1" />
-
 DHCP settings within Raspberry Pi admin panel
-
-<img width="997" height="597" alt="image" src="https://github.com/user-attachments/assets/0b26005d-f6c6-43b7-ad06-a889790eb975" />
-
+<img width="997" height="597" alt="image" src="https://github.com/user-attachments/assets/0b26005d-f6c6-43b7-ad06-a889790eb975" />Verification
 Final check to see if the DNS server is correctly set to the Raspberry Pi with Automatic DHCP enrollment enabled.
-
-<img width="1100" height="608" alt="image" src="https://github.com/user-attachments/assets/285349c2-b263-4e9b-9307-eaa6e5a127d1" />
-
-# Installing Tailscale on the Raspberry Pi 
-
-This is an additional step that will allow for a VPN connection to the Pi when a user is not at home, enabling adblocking when away from home. 
-
-Installing tailscale on the Pi via SSH and curl 
-
+<img width="1100" height="608" alt="image" src="https://github.com/user-attachments/assets/285349c2-b263-4e9b-9307-eaa6e5a127d1" />Installing Tailscale on the Raspberry Pi
+This is an additional step that will allow for a VPN connection to the Pi when a user is not at home, enabling adblocking when away from home.
+Installation and device registration
+Installing tailscale on the Pi via SSH and curl
 <img width="1109" height="618" alt="image" src="https://github.com/user-attachments/assets/be83b66c-cfb5-43c0-8f32-3ed7b86d7284" />
-
 Adding the RPH to the connected devices in the tailscale admin panel
-
-<img width="1566" height="588" alt="image" src="https://github.com/user-attachments/assets/9a473a21-5817-449a-8428-0f9ea6359294" />
-
-Changing the interface settings within the Raspberry Pi admin panel to allow connections from all origins 
-
+<img width="1566" height="588" alt="image" src="https://github.com/user-attachments/assets/9a473a21-5817-449a-8428-0f9ea6359294" />DNS configuration
+Changing the interface settings within the Raspberry Pi admin panel to allow connections from all origins
 <img width="501" height="556" alt="image" src="https://github.com/user-attachments/assets/41cda322-8002-4e4b-b4a7-2ccf92577a0a" />
-
-Adding the Pi's IP to the DNS nameserver settings in tailscale 
-
+Adding the Pi's IP to the DNS nameserver settings in tailscale
 <img width="676" height="303" alt="image" src="https://github.com/user-attachments/assets/b5209ba3-f9c9-4636-ae2d-d161420e73a7" />
-
 
 
