@@ -63,6 +63,25 @@ Final check to see if the DNS server is correctly set to the Raspberry Pi with A
 
 <img width="1100" height="608" alt="image" src="https://github.com/user-attachments/assets/285349c2-b263-4e9b-9307-eaa6e5a127d1" />
 
+# Installing Tailscale on the Raspberry Pi 
+
+This is an additional step that will allow for a VPN connection to the Pi when a user is not at home, enabling adblocking when away from home. 
+
+Installing tailscale on the Pi via SSH and curl 
+
+<img width="1109" height="618" alt="image" src="https://github.com/user-attachments/assets/be83b66c-cfb5-43c0-8f32-3ed7b86d7284" />
+
+Adding the RPH to the connected devices in the tailscale admin panel
+
+<img width="1566" height="588" alt="image" src="https://github.com/user-attachments/assets/9a473a21-5817-449a-8428-0f9ea6359294" />
+
+Changing the interface settings within the Raspberry Pi admin panel to allow connections from all origins 
+
+<img width="501" height="556" alt="image" src="https://github.com/user-attachments/assets/41cda322-8002-4e4b-b4a7-2ccf92577a0a" />
+
+Adding the Pi's IP to the DNS nameserver settings in tailscale 
+
+<img width="676" height="303" alt="image" src="https://github.com/user-attachments/assets/b5209ba3-f9c9-4636-ae2d-d161420e73a7" />
 
 
 
